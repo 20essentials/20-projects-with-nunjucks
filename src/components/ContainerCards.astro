@@ -1,0 +1,275 @@
+---
+import { baseUrl } from '@/utils/functions';
+
+const arrayCards = [
+  {
+    title: 'Lanzados',
+    repo: 'https://github.com/20essentials/project-000-164',
+    web: 'https://20essentials.github.io/project-000-164/',
+    localImage: '/assets/n164.avif',
+    id: '01',
+    color: '#ff5222'
+  },
+  {
+    title: 'AjexCube',
+    repo: 'https://github.com/20essentials/project-000-171',
+    web: 'https://20essentials.github.io/project-000-171/',
+    localImage: '/assets/n171.avif',
+    id: '02',
+    color: '#1abc9c'
+  },
+  {
+    title: 'Curl',
+    repo: 'https://github.com/20essentials/project-000-177',
+    web: 'https://20essentials.github.io/project-000-177/',
+    localImage: '/assets/n177.avif',
+    id: '03',
+    color: '#3498db'
+  },
+  {
+    title: 'ArrowDown',
+    repo: 'https://github.com/20essentials/project-000-183',
+    web: 'https://20essentials.github.io/project-000-183/',
+    localImage: '/assets/n183.avif',
+    id: '04',
+    color: '#9b59b6'
+  },
+  {
+    title: 'Snick',
+    repo: 'https://github.com/20essentials/project-000-188',
+    web: 'https://20essentials.github.io/project-000-188/',
+    localImage: '/assets/n188.avif',
+    id: '05',
+    color: '#e67e22'
+  },
+  {
+    title: 'Rendofort',
+    repo: 'https://github.com/20essentials/project-000-194',
+    web: 'https://20essentials.github.io/project-000-194/',
+    localImage: '/assets/n194.avif',
+    id: '06',
+    color: '#2ecc71'
+  },
+  {
+    title: 'Lines in Mg',
+    repo: 'https://github.com/20essentials/project-000-199',
+    web: 'https://20essentials.github.io/project-000-199/',
+    localImage: '/assets/n199.avif',
+    id: '07',
+    color: '#e74c3c'
+  },
+  {
+    title: 'Text Stroke',
+    repo: 'https://github.com/20essentials/project-000-207',
+    web: 'https://20essentials.github.io/project-000-207/',
+    localImage: '/assets/n207.avif',
+    id: '08',
+    color: '#1f618d'
+  },
+  {
+    title: 'Layered Card',
+    repo: 'https://github.com/20essentials/project-000-212',
+    web: 'https://20essentials.github.io/project-000-212/',
+    localImage: '/assets/n212.avif',
+    id: '09',
+    color: '#d35400'
+  },
+  {
+    title: 'RulerPrism',
+    repo: 'https://github.com/20essentials/project-000-222',
+    web: 'https://20essentials.github.io/project-000-222/',
+    localImage: '/assets/n222.avif',
+    id: '10',
+    color: 'mediumpurple'
+  },
+  {
+    title: 'Destino',
+    repo: 'https://github.com/20essentials/project-000-230',
+    web: 'https://20essentials.github.io/project-000-230/',
+    localImage: '/assets/n230.avif',
+    id: '11',
+    color: '#2980b9'
+  },
+  {
+    title: 'Sega',
+    repo: 'https://github.com/20essentials/project-000-243',
+    web: 'https://20essentials.github.io/project-000-243/',
+    localImage: '/assets/n243.avif',
+    id: '12',
+    color: '#8e44ad'
+  },
+  {
+    title: 'Samp',
+    repo: 'https://github.com/20essentials/project-000-246',
+    web: 'https://20essentials.github.io/project-000-246/',
+    localImage: '/assets/n246.avif',
+    id: '13',
+    color: '#c0392b'
+  },
+  {
+    title: 'Cerchin',
+    repo: 'https://github.com/20essentials/project-000-251',
+    web: 'https://20essentials.github.io/project-000-251/',
+    localImage: '/assets/n251.avif',
+    id: '14',
+    color: '#16a085'
+  },
+  {
+    title: 'Pong',
+    repo: 'https://github.com/20essentials/project-000-256',
+    web: 'https://20essentials.github.io/project-000-256/',
+    localImage: '/assets/n256.avif',
+    id: '15',
+    color: '#f39c12'
+  },
+  {
+    title: 'Dodacahedron',
+    repo: 'https://github.com/20essentials/project-000-261',
+    web: 'https://20essentials.github.io/project-000-261/',
+    localImage: '/assets/n261.avif',
+    id: '16',
+    color: '#2c3e50'
+  },
+  {
+    title: 'Xicron',
+    repo: 'https://github.com/20essentials/project-000-266',
+    web: 'https://20essentials.github.io/project-000-266/',
+    localImage: '/assets/n266.avif',
+    id: '17',
+    color: '#d35400'
+  },
+  {
+    title: 'Canvas Background',
+    repo: 'https://github.com/20essentials/project-000-271',
+    web: 'https://20essentials.github.io/project-000-271/',
+    localImage: '/assets/n271.avif',
+    id: '18',
+    color: '#27ae60'
+  },
+  {
+    title: 'Retro Flower',
+    repo: 'https://github.com/20essentials/project-000-283',
+    web: 'https://20essentials.github.io/project-000-283/',
+    localImage: '/assets/n283.avif',
+    id: '19',
+    color: '#9b59b6'
+  },
+  {
+    title: 'Core',
+    repo: 'https://github.com/20essentials/project-000-288',
+    web: 'https://20essentials.github.io/project-000-288/',
+    localImage: '/assets/n288.avif',
+    id: '20',
+    color: '#0f0e'
+  }
+];
+---
+
+<section>
+  {
+    arrayCards.map(({ id, localImage, repo, title, web, color }) => (
+      <a href={repo} class='cards' style={`--clr: ${color}`}>
+        <aside class='pixel-container' />
+        <h2>{id}</h2>
+        <img class='content' src={baseUrl(localImage)} alt={title} />
+      </a>
+    ))
+  }
+</section>
+
+<style>
+  section {
+    min-height: 100vh;
+    display: grid;
+    padding: 2.2vmax;
+    gap: 2.2vmax;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17vmax, 1fr));
+    place-content: center;
+    place-items: center;
+  }
+
+  .cards {
+    position: relative;
+    width: 17.53vmax;
+    height: 23.04vmax;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      h2 {
+        opacity: 0;
+        transition-delay: 0s;
+      }
+
+      .pixel-container .pixel {
+        opacity: 0;
+        transform: translate(var(--x), var(--y));
+      }
+    }
+
+    h2 {
+      position: relative;
+      font-size: 3vmax;
+      z-index: 3;
+      transition: opacity 0.3s ease;
+      transition-delay: 0.3s;
+      opacity: 1;
+    }
+
+    .content {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .pixel-container {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+
+    .pixel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: var(--clr);
+      border: 1px solid #1112;
+      transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+    }
+  }
+</style>
+
+<script>
+  const cards = document.querySelectorAll<HTMLElement>('.cards');
+  cards.forEach(card => {
+    const pixelContainer = card.querySelector('.pixel-container');
+
+    Array.from({ length: 400 }, (_, i) => {
+      let pixel = document.createElement('div');
+      pixel.classList.add('pixel');
+      let tx = (Math.random() - 0.5) * 100;
+      let ty = (Math.random() - 0.5) * 100;
+      pixel.style.setProperty('--x', `${tx}px`);
+      pixel.style.setProperty('--y', `${ty}px`);
+      pixel.style.transitionDelay = `${Math.random() * 0.5}s`;
+
+      pixelContainer?.appendChild(pixel);
+    });
+  });
+</script>

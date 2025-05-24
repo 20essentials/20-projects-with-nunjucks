@@ -1,0 +1,64 @@
+---
+import { baseUrl } from '@/utils/functions';
+import AnimationClick from '@/components/AnimationClick.astro';
+const logo = baseUrl('/assets/logo.png');
+---
+
+<section>
+  <h1>
+    20 PROJECTS WITH NUNJUCKS <img src={logo} alt='NunJucks Logo' />
+  </h1>
+  <AnimationClick />
+</section>
+
+<script></script>
+
+<style>
+  section {
+    height: 100vh;
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.3vmax;
+    text-align: center;
+    text-wrap: balance;
+    color: transparent;
+    background-image: var(--gradient-btn);
+    background-clip: text;
+    text-decoration: none;
+    animation: wobble 1s;
+
+    img {
+      width: 5vmax;
+      transform: translateY(1vmax);
+    }
+  }
+
+  @keyframes wobble {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+    15% {
+      transform: translate(-50%, -50%) rotate(-5deg) scale(0.95, 1.05);
+    }
+    30% {
+      transform: translate(-50%, -50%) rotate(3deg) scale(1.05, 0.95);
+    }
+    45% {
+      transform: translate(-50%, -50%) rotate(-3deg) scale(0.97, 1.03);
+    }
+    60% {
+      transform: translate(-50%, -50%) rotate(2deg) scale(1.03, 0.97);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(-1deg) scale(1.01, 0.99);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+  }
+</style>
