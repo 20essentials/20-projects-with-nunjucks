@@ -7,8 +7,8 @@ export default defineConfig({
     assets: 'static'
   },
   //Deploy
-  base: '/project-000-948/',
-  site: 'https://20essentials.github.io/project-000-948/'
+  base: '/20-projects-with-nunjucks/',
+  site: 'https://20essentials.github.io/20-projects-with-nunjucks/'
 
   //Localhost
   // base: '.',
